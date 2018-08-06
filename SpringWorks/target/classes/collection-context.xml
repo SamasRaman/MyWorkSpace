@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   http://www.springframework.org/schema/beans/spring-beans.xsd">
+	 
+	<bean id="questionBank" class="com.training.collections.QuestionBank">
+	<property name="question" value="Inheritance is available in _______"/>
+	<property name="options">
+	<list>
+	<value>Java</value>
+	<value>C++</value>
+	<value>Scala</value>
+	<value>All</value>
+	</list>
+	</property>
+	</bean>
+	
+	<bean id="addressSet" class="com.training.collections.AdressSet">
+	
+	<property name="addresses">
+	<set>
+	<value>Bangalore</value>
+	<value>Hyderabad</value>
+	<value>Pune</value>
+	<value>All</value>
+	</set>
+	</property>
+	</bean>
+	
+	<bean id="accountMap" class="com.training.collections.AccountMap">
+	
+	<property name="accountMap">
+	<map>
+	<entry key="Ramu" value="4000"/>
+	<entry key="Alam" value="6000"/>
+	<entry key="Abhi" value="3000"/>
+	</map>
+	</property>
+	</bean>
+	
+	<bean id="myCollection" class="com.training.collections.MyCollection"
+	autowire="byName"/>
+	
+
+
+</beans>
